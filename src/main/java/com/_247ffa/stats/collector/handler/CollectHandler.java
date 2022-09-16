@@ -8,7 +8,7 @@ import com.microsoft.azure.functions.annotation.TimerTrigger;
 public class CollectHandler {
 
 	@FunctionName("collect")
-	public void execute(@TimerTrigger(name = "collectTrigger", schedule = "0 */1 * * * *") String timerInfo,
+	public void execute(@TimerTrigger(name = "collectTrigger", schedule = "0 */2 * * * *") String timerInfo,
 			ExecutionContext context) {
 		new Collect().accept(timerInfo);
 	}
