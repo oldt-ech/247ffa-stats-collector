@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com._247ffa</groupId>
 	<artifactId>stats-collector</artifactId>
-	<version>2.0.0</version>
+	<version>3.8.0</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
