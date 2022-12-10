@@ -5,16 +5,14 @@
 	<version>3.8.0</version>
 
 	<properties>
+		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<azure.functions.java.library.version>2.2.0</azure.functions.java.library.version>
 		<azure.functions.maven.plugin.version>1.21.0</azure.functions.maven.plugin.version>
-
 		<functionResourceGroup>247ffa-com</functionResourceGroup>
 		<functionAppName>247-ffa-server-stats-collector</functionAppName>
-
 		<functionAppRegion>canadacentral</functionAppRegion>
 		<stagingDirectory>${project.build.directory}/azure-functions/${functionAppName}</stagingDirectory>
 	</properties>
@@ -85,7 +83,7 @@
 					<region>${functionAppRegion}</region>
 					<runtime>
 						<os>linux</os>
-						<javaVersion>11</javaVersion>
+						<javaVersion>${java.version}</javaVersion>
 					</runtime>
 					<appSettings>
 						<property>
